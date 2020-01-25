@@ -1,4 +1,4 @@
-MERN - A single page app for developers
+MERN - A single page app for user profiles
 
 Tools Used
 
