@@ -11,5 +11,5 @@ Tools Used
 .React Hooks
 .Redux with DevTools
 .Bcrypt password hashing
-.Scss/Sass
+.Scss
 .Heroku & Git for deployment

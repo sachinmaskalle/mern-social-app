@@ -65,6 +65,7 @@ router.post(
       // hash password before saving to DB
       user.password = await bcrypt.hash(password, salt);
 
+      // save in atlas as collection
       await user.save();
 
       // Return jsonwebtoken

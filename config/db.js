@@ -11,10 +11,11 @@ const connectDb = async () => {
       useUnifiedTopology: true,
       tlsAllowInvalidCertificates: true,
       useNewUrlParser: true,
-      useCreateIndex: true
+      useCreateIndex: true,
+      useFindAndModify: false
     });
 
-    console.log('Mongo DB connected successfully...');
+    console.log('Mongo DB connection Success !...');
   } catch (error) {
     console.error(error.message);
 
