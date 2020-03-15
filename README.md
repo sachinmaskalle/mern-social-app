@@ -1,15 +1,19 @@
-MERN - A single page app for user profiles
+A single page app for user profiles using MERN
 
-Tools Used
+() => Technologies/Tools
 
-.VS Code
-.Postman
-.Mongo/Mongo DB/Mongoose/Atlas
-.ES6+ Syntax
+.Node JS
+.Express JS
+.CORS
+.Mongo DB Atlas/Mongoose
+.ES6+
 .Async Await
 .JWT
-.React Hooks
+.React JS - React Hooks
 .Redux with DevTools
+.Redux thunk
 .Bcrypt password hashing
-.Scss
+.HTML5/CSS3/SCSS
 .Heroku & Git for deployment
+.VS Code
+.Postman
