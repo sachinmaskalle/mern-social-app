@@ -4,7 +4,7 @@ const authorize = require('../../middleware/authorize');
 
 const User = require('../../models/User');
 const Profile = require('../../models/Profile');
-const PostSchema = require('../../models/Posts');
+const Post = require('../../models/Posts');
 
 const router = express.Router();
 
@@ -88,7 +88,7 @@ router.get('/:id', authorize, async (req, res) => {
 router.delete('/:id', authorize, async (req, res) => {
   try {
     const post = await Post.findById(req.params.id);
-    console.log('post' + post);
+    // console.log('post' + post);
     // If post doesn't exists
     if (!post) {
       return res.status(404).json({ msg: 'Post not found' });
@@ -117,7 +117,7 @@ router.delete('/:id', authorize, async (req, res) => {
 router.put('/like/:id', authorize, async (req, res) => {
   try {
     const post = await Post.findById(req.params.id);
-    console.log('post ' + post);
+    // console.log('post ' + post);
     // check if the post has been already liked
     if (
       post.likes.filter(like => like.user.toString() === req.user.id).length > 0
